@@ -20,8 +20,11 @@ const HotelNameCard = ({
 }: HoteNameCardProps) => {
   return (
     <div className="hotelNameCard__container">
-      <h3 className="hotelNameCard__title ">{hotelName}</h3>
-      <Ratings ratingValue={ratingValue} ratingType={ratingType} />
+      <div className="hotelNameCard__name-rating-block">
+        <h3 className="hotelNameCard__title ">{hotelName}</h3>
+        <Ratings ratingValue={ratingValue} ratingType={ratingType} />
+      </div>
+
       <p>{address}</p>
       <p>{roomType}</p>
       <p>{cancellationType}</p>

@@ -1,8 +1,12 @@
 .imageCard__container {
     display: flex;
     align-items: center;
-    border-top: 1px solid grey;
-    height: 200px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    height: 180px;
+    justify-content: flex-start;
+    margin-bottom: 24px;
+
 }
 
 .imageCard__picture {

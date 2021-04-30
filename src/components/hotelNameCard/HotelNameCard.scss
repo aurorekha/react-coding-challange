@@ -1,5 +1,5 @@
 .hotelNameCard__container {
-    width: 100%;
+    padding: 0 24px
 }
 
 .hotelNameCard__title {
@@ -8,4 +8,12 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.hotelNameCard__name-rating-block {
+    display: flex;
+
+    div {
+        padding-top: 14px;
+    }
 }
