@@ -54,17 +54,20 @@ function App() {
     <div className="main__container">
       <header className="">
         <img src={logo} alt="logo" className="main__logo" />
-        <h3 className="">
-          {" "}
-          5 <span> hotels in </span>Sydney
-        </h3>
-        <Dropdown handleDropdownSelect={handleDropdownSelect} />{" "}
+        <div className="main__header">
+          <p className="main__hotel-results-list">
+            {data.data.length}
+            <span className="main__hotel-span"> hotels in </span>Sydney
+          </p>
+          <Dropdown handleDropdownSelect={handleDropdownSelect} />
+        </div>
+
         {data
           ? data.data.map((hotel, index) => {
               return <ImageCardView key={index} hotel={hotel} index={index} />;
             })
-          : dropDown}{" "}
-      </header>{" "}
+          : dropDown}
+      </header>
     </div>
   );
 }

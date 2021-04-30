@@ -6,12 +6,14 @@ type Dropdownprops = {
 
 const Dropdown = ({ handleDropdownSelect }: Dropdownprops) => {
   return (
-    <div>
-      <label>Sort by price:</label>
+    <div className="dropdown__block">
+      <label>
+        <strong>Sort by:</strong>
+      </label>
       <select name="hotelDropdown" onChange={handleDropdownSelect}>
         <option value="">Select</option>
-        <option value="highToLow">High to low</option>
-        <option value="lowToHigh">Low to high</option>
+        <option value="highToLow">Price High to low</option>
+        <option value="lowToHigh">Price Low to high</option>
       </select>
     </div>
   );
