@@ -1,0 +1,11 @@
+.hotelNameCard__container {
+    width: 100%;
+}
+
+.hotelNameCard__title {
+    width: 70%;
+    padding: 2px 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
