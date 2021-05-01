@@ -18,16 +18,21 @@ const HotelNameCard = ({
   ratingValue,
   ratingType,
 }: HoteNameCardProps) => {
+  const cancellationTypeName = cancellationType
+    .split("_")
+    .join(" ")
+    .toLowerCase();
   return (
     <div className="hotelNameCard__container">
       <div className="hotelNameCard__name-rating-block">
         <h3 className="hotelNameCard__title ">{hotelName}</h3>
         <Ratings ratingValue={ratingValue} ratingType={ratingType} />
       </div>
-
-      <p>{address}</p>
-      <p>{roomType}</p>
-      <p>{cancellationType}</p>
+      <div className="hotelNameCard__address-room-block">
+        <p className="hotelNameCard__address">{address}</p>
+        <p className="hotelNameCard__roomType">{roomType}</p>
+      </div>
+      <p className="hotelNameCard__cancellationType">{cancellationTypeName}</p>
     </div>
   );
 };

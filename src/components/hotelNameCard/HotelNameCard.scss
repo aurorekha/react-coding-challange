@@ -1,13 +1,23 @@
 .hotelNameCard__container {
-    padding: 0 24px
+    padding: 0 24px;
+    width: 70%;
+}
+
+.hotelNameCard__cancellationType {
+    color: green;
+    font-size: 14px;
+    margin-bottom: 12px;
+
+    &::first-letter {
+        text-transform: uppercase;
+    }
 }
 
 .hotelNameCard__title {
-    width: 70%;
-    padding: 2px 5px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: 500;
 }
 
 .hotelNameCard__name-rating-block {
@@ -16,4 +26,21 @@
     div {
         padding-top: 14px;
     }
+}
+
+.hotelNameCard__roomType {
+    color: red;
+    text-decoration: underline;
+}
+
+.hotelNameCard__address {
+    font-size: 14px;
+    color: grey;
+    margin-bottom: 24px;
+}
+
+.hotelNameCard__address-room-block {
+    position: relative;
+    top: -44px;
+    margin-top: 0;
 }
