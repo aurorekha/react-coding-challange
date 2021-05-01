@@ -26,12 +26,17 @@ type ImageCardViewProps = {
         amount: number;
         currency: string;
       };
+      savings: {
+        amount: number;
+        currency: string;
+      };
     };
   };
   index: number;
 };
 
 const ImageCardView = ({ hotel, index }: ImageCardViewProps) => {
+  const discount = hotel?.offer?.savings?.amount;
   return (
     <ImageCard
       key={`${index}-${hotel.property.title}-imagecard`}
@@ -45,6 +50,7 @@ const ImageCardView = ({ hotel, index }: ImageCardViewProps) => {
       currency={hotel.offer.displayPrice.currency}
       ratingType={hotel.property.rating.ratingType}
       ratingValue={hotel.property.rating.ratingValue}
+      discountAmount={discount}
     />
   );
 };

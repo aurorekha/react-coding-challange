@@ -13,6 +13,7 @@ type ImageCardProps = {
   currency: string;
   ratingValue: number;
   ratingType: string;
+  discountAmount?: number;
 };
 
 const ImageCard = ({
@@ -26,6 +27,7 @@ const ImageCard = ({
   currency,
   ratingValue,
   ratingType,
+  discountAmount,
 }: ImageCardProps) => {
   return (
     <div className="imageCard__container">
@@ -41,7 +43,11 @@ const ImageCard = ({
         ratingValue={ratingValue}
         ratingType={ratingType}
       />
-      <PriceDetails totalAmount={totalAmount} currency={currency} />
+      <PriceDetails
+        totalAmount={totalAmount}
+        currency={currency}
+        discountAmount={discountAmount}
+      />
     </div>
   );
 };
