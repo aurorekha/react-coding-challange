@@ -15,11 +15,12 @@ const PriceDetails = ({
 }: PriceDetailsProps) => {
   return (
     <div className="priceDetails__container">
-      <p>{`1 night total ${currency}`}</p>
-      <h2>${totalAmount}</h2>
-      {discountAmount !== undefined && (
-        <h3>{`Save $${discountAmount} ${currency}`}</h3>
-      )}
+      <p>
+        <strong>1</strong>
+        {` night total (${currency})`}
+      </p>
+      <h1>${totalAmount}</h1>
+      {discountAmount !== undefined && <h3>{`Save $${discountAmount}~`}</h3>}
     </div>
   );
 };

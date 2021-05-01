@@ -1,6 +1,7 @@
 @import "./components/imageCard/ImageCard.scss";
 @import "./components/hotelNameCard/HotelNameCard.scss";
 @import "./components/dropdown/Dropdown.scss";
+@import "./components/priceDetails/PriceDetails.scss";
 
 body {
   padding: 24px;
@@ -13,7 +14,7 @@ body {
 }
 
 .main__logo {
-  width: 25%;
+  width: 15%;
 }
 
 .main__hotel-span {

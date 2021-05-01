@@ -3,7 +3,7 @@
     align-items: center;
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
-    height: 180px;
+    height: 200px;
     justify-content: flex-start;
     margin-bottom: 24px;
 }
@@ -12,7 +12,8 @@
     margin-right: 12px;
 
     img {
-        height: 180px;
+        height: 200px;
+        width: 232px;
         margin-top: 31px;
     }
 }
@@ -21,7 +22,7 @@
     position: relative;
     color: red;
     background-color: white;
-    top: -165px;
+    top: -188px;
     text-align: center;
     padding: 6px;
     margin: 0;
