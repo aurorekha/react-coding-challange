@@ -17,7 +17,6 @@ const wrapper = shallow(<PriceDetails {...priceDetailsProps} />);
 
 describe("PriceDetails", () => {
   it("should render the priceDetails container with all of it/'s props", () => {
-    console.log(wrapper.debug());
     expect(wrapper.find(".priceDetails__container").length).toBe(1);
   });
 });
