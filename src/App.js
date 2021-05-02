@@ -48,7 +48,9 @@ function App() {
     }
   };
 
-  useEffect(() => hotelData, []);
+  useEffect(() => {
+    data;
+  }, []);
 
   return (
     <div className="main__container">
@@ -56,18 +58,18 @@ function App() {
         <img src={logo} alt="logo" className="main__logo" />
         <div className="main__header">
           <p className="main__hotel-results-list">
-            {data.data.length}
-            <span className="main__hotel-span"> hotels in </span>Sydney
-          </p>
-          <Dropdown handleDropdownSelect={handleDropdownSelect} />
-        </div>
-
+            {" "}
+            {data.data.length}{" "}
+            <span className="main__hotel-span"> hotels in </span>Sydney{" "}
+          </p>{" "}
+          <Dropdown handleDropdownSelect={handleDropdownSelect} />{" "}
+        </div>{" "}
         {data
           ? data.data.map((hotel, index) => {
               return <ImageCardView key={index} hotel={hotel} index={index} />;
             })
-          : dropDown}
-      </header>
+          : dropDown}{" "}
+      </header>{" "}
     </div>
   );
 }

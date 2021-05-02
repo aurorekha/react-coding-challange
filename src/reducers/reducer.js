@@ -1,14 +1,10 @@
 const initialState = {
-   data: Object 
+    data: {}
 }
 
-const reducer = (state= initialState, action) => {
-    // const sortLowToHigh = action.data && action.data.sort((a, b) => 
-    //     parseFloat(a.offer.displayPrice.amount) - parseFloat(b.offer.displayPrice.amount))
-    // const sortHighToLow = action.data && action.data.sort((a, b) => 
-    //     parseFloat(b.offer.displayPrice.amount) - parseFloat(a.offer.displayPrice.amount))
-    
-        switch(action.type) {
+const reducer = (state = initialState, action) => {
+
+    switch (action.type) {
         case 'GET_HOTEL_DATA': {
             return {
                 ...state,
@@ -16,8 +12,8 @@ const reducer = (state= initialState, action) => {
             }
         }
 
-        default: 
-        return state
+        default:
+            return state
     }
 
 }
