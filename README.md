@@ -2,7 +2,7 @@
 
 To start get the project started please follow the steps below.
 
-1. Clone the repo from here --> [https://github.com/aurorekha/react-coding-challange]
+1. Clone the repo from here 
 2. Checkout the repo
 3. type yarn
 4. yarn start
