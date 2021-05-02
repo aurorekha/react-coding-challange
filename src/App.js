@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { getHotelData } from "./actions/actions";
 import logo from "./images/qantas-logo.png";
 import Dropdown from "./components/dropdown/Dropdown";
@@ -10,7 +10,6 @@ function App() {
   const dispatch = useDispatch();
   const [dropDown, setDropDown] = useState(false);
 
-  const hotelData = useSelector((state) => state.data);
   const data = dispatch(getHotelData());
 
   const sortLowToHigh = () => {
@@ -49,7 +48,10 @@ function App() {
   };
 
   useEffect(() => {
-    data;
+    async function returnHotelData() {
+      await getHotelData();
+    }
+    returnHotelData();
   }, []);
 
   return (
