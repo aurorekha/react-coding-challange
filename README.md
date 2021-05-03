@@ -9,9 +9,6 @@ To start get the project started please follow the steps below.
 
 It should then start the app up.
 
-### Branch details
-
-I ran into some trouble with git and my repo but when it all started to work together there ended up being a main branch and master branch. All of my work is in the master branch. So please check that branch out.
 
 #### To run the tests
 
