@@ -23,7 +23,7 @@ For styles I used SCSS, BEM(naming convention), flexbox.
 
 I started this app from create-react-app and built it from there. I used TDD approach to make this SPA. I started off with some basic tests and added them as I felt they needed more. I have taken the component based approach to keep all of the calls to a single source to reduce the number of calls being made(this way would be even more prominent if we were making multiple calls) while respecting the flow of the props.
 
-There is still some that can be refactored and I can definitely make up better classNames and make it look a bit more similar to the given image with some more elegant styling solutions.
+There is still some that can be refactored and I can definitely make up better classNames and make it look a bit more similar to the given image with some more elegant styling solutions and not forget would have made this responsive too. 
 
 I know a lot of people don't use TypeScript but would rather go with plain react with its functional and class components which I am completely fine with but I have gone with TS because it feels simpler and cleaner with it than without it. For one thing it helps you get rid of specifying the props and proptypes at the end of the class function (which we can get rid of when using TS) but instead you have the types defined right the top and also helps you understand the type of data you are supposed to pass through instead of guessing which makes it easier to write you tests too. I have also used React hooks because once again I feel it is very concise and clear and easy to understand once you used it for a while and I love using hooks. :)
 
